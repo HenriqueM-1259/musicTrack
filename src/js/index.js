@@ -2,7 +2,6 @@ var varGlobal = {
     item: document.getElementById("container")
 }
 
-
 async function loadMusic(){
     const url = "./bdJson/Musicas.json"
     let response = await fetch(url);
@@ -18,7 +17,7 @@ async function loadMusic(){
 loadMusic();
 
 function loadCardMusic(musicas){
-var montaCard = ""
+   var montaCard = ""
     debugger
    for (let i = 0; i < musicas.length; i++) {
     montaCard += `
@@ -29,18 +28,18 @@ var montaCard = ""
     <audio controls>
 	<source src="${musicas[i].UrlMusic}" type="audio/mpeg">
 	<source src=" type="audio/ogg">
-
     </audio>
     </div>
     </div>
     </div>`
         console.log(musicas[i])
-    
    }
    
     varGlobal.item.innerHTML += montaCard
 }
 
-function tocarMusica(urlmusic){
-
+function unloadScrollBars() {
+    document. documentElement. style. overflow = 'hidden';
+    document. body. scroll = "no"; // IE.
 }
+unloadScrollBars();
