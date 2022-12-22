@@ -1,9 +1,23 @@
 {
     
-    "musicas":{
-        "id":1,
-        "NameAuthor": "Tim maia",
-        "NameMusic": "Ela Partiu",
-        "Url":"./src/sound/music001.mp3"
-    }
+    "musicas":[{
+        
+            "id":1,
+            "NameAuthor": "Tim maia",
+            "NameMusic": "Ela Partiu",
+            "UrlMusic":"./src/sound/music001.mp3",
+            "UrlImg":"./src/img/CrioloAlbum.jpg"
+            },
+            {
+        
+                "id":2,
+                "NameAuthor": "Tim maia",
+                "NameMusic": "Ela voltou?",
+                "UrlMusic":"./src/sound/music001.mp3",
+                "UrlImg":"./src/img/CrioloAlbum.jpg"
+
+            }
+        ]
+        
+     
 }
