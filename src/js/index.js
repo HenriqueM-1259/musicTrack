@@ -25,14 +25,12 @@ var montaCard = ""
     <div class="item" id="item">
     <div class="card" id="card">
     <img src="${musicas[i].UrlImg}" alt="" width="250">
-    <h5>${musicas[i].NameMusic}</h5>
     <div class="listaBotao">
-    <button><i class="fa-solid fa-forward"></i></button>
-    <button onchange="${musicas[i].UrlMusic}"><i class="fa-solid fa-play"></i></button>
-    <button><i class="fa-solid fa-forward"></i></button>
-    </div>
-    <div class="listaBotao">
-    <input type="range">
+    <audio controls>
+	<source src="${musicas[i].UrlMusic}" type="audio/mpeg">
+	<source src=" type="audio/ogg">
+
+    </audio>
     </div>
     </div>
     </div>`
@@ -41,4 +39,8 @@ var montaCard = ""
    }
    
     varGlobal.item.innerHTML += montaCard
+}
+
+function tocarMusica(urlmusic){
+
 }
