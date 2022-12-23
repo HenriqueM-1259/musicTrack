@@ -21,7 +21,7 @@ function loadCardMusic(musicas){
     debugger
    for (let i = 0; i < musicas.length; i++) {
     montaCard += `
-    <div class="item" id="item">
+    <div class="item" id="item${i}">
     <div class="card" id="card">
     <img src="${musicas[i].UrlImg}" alt="" width="250">
     <div class="listaBotao">
@@ -43,3 +43,25 @@ function unloadScrollBars() {
     document. body. scroll = "no"; // IE.
 }
 unloadScrollBars();
+
+function Proximo(voltar){
+    debugger
+    var allItems = document.getElementsByClassName('item')
+    for (let i = 0; i < allItems.length; i++) {
+        
+        var quantidade =  allItems[i].style.right
+        if(!!quantidade){
+            quantidade = quantidade.split('px')
+            quantidade = quantidade[0]
+        }else quantidade = 0
+        
+        
+        quantidade = parseInt(quantidade) 
+        if(!!voltar){
+            quantidade -= 40
+        }else quantidade += 40 
+       
+        quantidade += 'px'
+        allItems[i].style.right = quantidade;
+    }
+}

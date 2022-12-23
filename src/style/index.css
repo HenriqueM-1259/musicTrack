@@ -14,9 +14,8 @@
 .item{
     margin-top: 100px;
     margin-right: 25px;
-
+    position: relative;
     display: flex;
-
     flex-wrap: wrap;
     align-content: center;
     flex-direction: column;  
